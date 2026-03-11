@@ -1,0 +1,65 @@
+// ============================================
+// VARIABLES Y COLORES
+// ============================================
+
+// COLORES NEÓN
+$neon-cyan: #00f7ff;
+$neon-purple: #8a2bff;
+$neon-pink: #ff2bd6;
+$dark-bg: #050505;
+$dark-secondary: #0a0a0a;
+$dark-tertiary: #0a0a0a;
+
+// COLORES COMPLEMENTARIOS
+$border-color: #111111;
+$text-primary: #ffffff;
+$text-secondary: #cccccc;
+$text-tertiary: #aaaaaa;
+$text-light: #bbbbbb;
+
+// GRADIENTES
+$gradient-neon: linear-gradient(90deg, $neon-purple, $neon-cyan);
+$gradient-dark-blue: linear-gradient(
+  180deg,
+  rgba(0, 20, 40, 0.6),
+  rgba(0, 40, 80, 0.35),
+  rgba(0, 10, 20, 0.6)
+);
+$gradient-radial-cyan: radial-gradient(
+  circle at 30% 40%,
+  rgba(0, 180, 255, 0.08),
+  transparent 60%
+);
+
+// SOMBRAS NEÓN
+$shadow-cyan: 0 0 10px rgba(0, 255, 255, 0.3), 0 0 20px rgba(138, 43, 255, 0.3);
+$shadow-cyan-hover: 0 0 20px var(--neon-cyan), 0 0 40px var(--neon-purple);
+
+// ESPACIOS
+$spacing-xs: 5px;
+$spacing-sm: 10px;
+$spacing-md: 15px;
+$spacing-lg: 20px;
+$spacing-xl: 30px;
+$spacing-2xl: 40px;
+$spacing-3xl: 50px;
+$spacing-4xl: 140px;
+
+// TAMAÑOS DE FUENTE
+$font-size-sm: 0.7rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.2rem;
+$font-size-xl: 1.5rem;
+$font-size-2xl: 2rem;
+$font-size-2-5xl: 2.5rem;
+$font-size-3xl: 3rem;
+$font-size-7xl: 7rem;
+
+// TRANSICIONES
+$transition-base: 0.3s;
+$transition-long: 0.5s;
+
+// Z-INDEX
+$z-header: 1000;
+$z-overlay: -1;
+$z-video: -2;

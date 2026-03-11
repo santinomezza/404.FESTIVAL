@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+*.map
+.sass-cache/
+.env
+.env.local
+dist/
+build/
+.vscode/settings.json

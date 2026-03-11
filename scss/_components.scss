@@ -1,0 +1,424 @@
+// ============================================
+// HEADER / NAVEGACIÓN
+// ============================================
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: transparent;
+  transition: background $transition-base;
+  z-index: $z-header;
+
+  &.scrolled {
+    background: black;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 900;
+  color: $neon-cyan;
+  text-shadow:
+    0 0 5px $neon-cyan,
+    0 0 10px $neon-cyan,
+    0 0 20px $neon-cyan;
+}
+
+.nav {
+  display: flex;
+
+  a {
+    margin-left: $spacing-2xl;
+    text-decoration: none;
+    color: $text-primary;
+    font-weight: 600;
+    position: relative;
+    transition: color $transition-base;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: $gradient-neon;
+      transition: width $transition-base;
+    }
+
+    &:hover {
+      color: $neon-cyan;
+      text-shadow: 0 0 10px $neon-cyan;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// ============================================
+// HERO SECTION
+// ============================================
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: $spacing-md;
+  min-width: 60%;
+  min-height: 60%;
+  transform: translate(-50%, -25%);
+  object-fit: contain;
+  z-index: $z-video;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: $z-overlay;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero {
+  h1 {
+    font-size: $font-size-7xl;
+    font-weight: 900;
+    letter-spacing: -3px;
+  }
+}
+
+.hero-tag {
+  margin-top: $spacing-lg;
+  font-size: $font-size-lg;
+  color: #ccc;
+  letter-spacing: 4px;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: $spacing-2xl;
+  padding: 18px 40px;
+  background: $gradient-neon;
+  color: $text-primary;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow:
+    0 0 10px $neon-purple,
+    0 0 20px $neon-cyan;
+  transition: transform $transition-base, box-shadow $transition-base;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow:
+      0 0 20px $neon-cyan,
+      0 0 40px $neon-purple;
+  }
+}
+
+// ============================================
+// COUNTDOWN
+// ============================================
+
+.countdown {
+  margin-top: $spacing-3xl;
+  display: flex;
+  gap: $spacing-2xl;
+  justify-content: center;
+
+  div {
+    text-align: center;
+  }
+
+  span {
+    font-size: $font-size-2-5xl;
+    font-weight: 900;
+    color: $neon-cyan;
+    text-shadow: 0 0 10px $neon-cyan;
+  }
+
+  p {
+    font-size: $font-size-sm;
+    letter-spacing: 2px;
+    color: $text-tertiary;
+  }
+}
+
+// ============================================
+// ARTISTAS / GRID
+// ============================================
+
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: $spacing-2xl;
+}
+
+.artist {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    display: block;
+    transition: transform $transition-long;
+    box-shadow: $shadow-cyan;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: $shadow-cyan-hover;
+    }
+  }
+
+  h3 {
+    position: absolute;
+    bottom: $spacing-lg;
+    left: $spacing-lg;
+    font-size: $font-size-xl;
+    font-weight: 900;
+  }
+}
+
+.artists-history{
+margin-top:100px;
+}
+
+.artists-history h3{
+text-align:center;
+margin-bottom:40px;
+letter-spacing:3px;
+color:#00f7ff;
+text-shadow:0 0 10px rgba(0,247,255,.6);
+}
+
+/* GRID 2x4 */
+
+.artists-table{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+}
+
+/* CELDAS */
+.artist-cell{
+background:white;
+color:rgb(0, 0, 0);
+padding: 25px 10px;
+text-align:center;
+font-weight:700;
+letter-spacing:2px;
+border-radius:4px;
+transition:all .35s ease;
+cursor:pointer;
+}
+
+/* ANIMACION HOVER */
+
+.artist-cell:hover{
+transform:translateY(-8px) scale(1.0);
+background:linear-gradient(
+90deg,
+#00f7ff,
+#8a2bff
+);
+color:white;
+box-shadow:
+0 0 15px rgba(0,247,255,.7),
+0 0 30px rgba(138,43,255,.6);
+}
+
+// ============================================
+// ENTRADAS / TICKETS
+// ============================================
+
+.ticket-section {
+  text-align: center;
+  background-image: url(/img/hero-bg.png);
+}
+
+.ticket-form {
+  background-color: rgba(5, 5, 5, 0.47);
+  padding: $spacing-lg;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+  max-width: 400px;
+  margin: auto;
+
+  input,
+  select {
+    padding: 12px;
+    background: $dark-secondary;
+    border: 1px solid rgba(0, 200, 255, 0.3);
+    color: $text-primary;
+  }
+
+  button {
+    padding: 14px;
+    background: $gradient-neon;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.5);
+  }
+}
+
+.ticket-info {
+  margin-top: $spacing-lg;
+  padding: $spacing-lg;
+  color: $text-secondary;
+}
+
+// ============================================
+// UBICACIÓN / LOCATION
+// ============================================
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-2xl;
+}
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-lg;
+}
+
+#map {
+  width: 100%;
+  max-width: 700px;
+  height: 420px;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.3);
+}
+
+.map-address {
+  color: $text-light;
+  letter-spacing: 2px;
+}
+
+// ============================================
+// ABOUT / CONTACT
+// ============================================
+
+.about-section {
+  background: $gradient-dark-blue, $gradient-radial-cyan;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.about-text {
+  max-width: 600px;
+  font-size: $font-size-base;
+  line-height: 1.8;
+  color: #e0e0e0;
+
+  strong {
+    color: $neon-cyan;
+    text-shadow: 0 0 8px rgba(0, 247, 255, 0.6);
+  }
+
+  p {
+    margin-bottom: $spacing-lg;
+  }
+}
+
+// ============================================
+// REDES SOCIALES
+// ============================================
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xl;
+  align-items: center;
+}
+
+.social {
+  font-size: $font-size-2xl;
+  color: $text-primary;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: $dark-secondary;
+  transition: transform $transition-base, box-shadow $transition-base;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+
+  &.tiktok:hover {
+    color: #00f2ea;
+    box-shadow: 0 0 10px #00f2ea, 0 0 20px #00f2ea;
+  }
+
+  &.instagram:hover {
+    color: $neon-pink;
+    box-shadow: 0 0 10px $neon-pink, 0 0 20px $neon-pink;
+  }
+
+  &.spotify:hover {
+    color: #1db954;
+    box-shadow: 0 0 10px #1db954, 0 0 20px #1db954;
+  }
+}
+
+// ============================================
+// FOOTER
+// ============================================
+
+footer {
+  text-align: center;
+  padding: $spacing-2xl;
+  border-top: 1px solid $border-color;
+  margin-top: 100px;
+}
+
+// ============================================
+// SECTION BASE
+// ============================================
+
+.section {
+  padding: $spacing-4xl 8%;
+  border-top: 1px solid $border-color;
+
+  h2 {
+    font-size: $font-size-3xl;
+    margin-bottom: $spacing-3xl;
+  }
+}

@@ -1,0 +1,16 @@
+// ============================================
+// MAIN SCSS - ARCHIVO PRINCIPAL
+// Compilar a: style.css
+// ============================================
+
+// IMPORTAR VARIABLES
+@use 'variables' as *;
+
+// IMPORTAR ESTILOS BASE
+@import 'base';
+
+// IMPORTAR COMPONENTES
+@import 'components';
+
+// IMPORTAR RESPONSIVE
+@import 'responsive';
