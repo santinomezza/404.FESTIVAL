@@ -1,0 +1,104 @@
+{
+  "festival": {
+    "name": "404. FESTIVAL",
+    "tagline": "SONIDOS EMERGENTES | RAP EN VIVO | CULTURA LOCAL",
+    "description": "Donde la música underground cobra vida. Artistas locales emergentes en un espacio único.",
+    "colors": {
+      "primary_dark": "#0a0e27",
+      "secondary_dark": "#1a1f3a",
+      "tertiary_dark": "#2a2f4a",
+      "accent_primary": "#ff006e",
+      "accent_secondary": "#39ff14",
+      "accent_tertiary": "#7c3aed",
+      "text_primary": "#ffffff",
+      "text_secondary": "#b0b8cc",
+      "border_color": "#3a3f5a"
+    }
+  },
+  "event": {
+    "name": "Próximo Evento",
+    "location": "[Tu dirección aquí]",
+    "address_full": "Ciudad, País",
+    "date": "[Fecha del evento]",
+    "time": "[Hora del evento]",
+    "latitude": -34.6037,
+    "longitude": -58.3890,
+    "ticket_url": "#contacto"
+  },
+  "artists": [
+    {
+      "id": 1,
+      "name": "ARTISTA 1",
+      "genre": "RAP / HIP-HOP",
+      "instagram": "https://instagram.com/",
+      "spotify": "https://open.spotify.com/",
+      "bio": "Descripción del artista"
+    },
+    {
+      "id": 2,
+      "name": "ARTISTA 2",
+      "genre": "RAP / TRAP",
+      "instagram": "https://instagram.com/",
+      "spotify": "https://open.spotify.com/",
+      "bio": "Descripción del artista"
+    },
+    {
+      "id": 3,
+      "name": "ARTISTA 3",
+      "genre": "RAP / FREESTYLE",
+      "instagram": "https://instagram.com/",
+      "spotify": "https://open.spotify.com/",
+      "bio": "Descripción del artista"
+    },
+    {
+      "id": 4,
+      "name": "ARTISTA 4",
+      "genre": "RAP / UNDERGROUND",
+      "instagram": "https://instagram.com/",
+      "spotify": "https://open.spotify.com/",
+      "bio": "Descripción del artista"
+    }
+  ],
+  "social_media": {
+    "instagram": {
+      "url": "https://instagram.com/404festival",
+      "username": "@404festival"
+    },
+    "tiktok": {
+      "url": "https://tiktok.com/@404festival",
+      "username": "@404festival"
+    },
+    "twitter": {
+      "url": "https://twitter.com/404festival",
+      "username": "@404festival"
+    },
+    "youtube": {
+      "url": "https://youtube.com/@404festival",
+      "username": "@404festival"
+    },
+    "spotify": {
+      "url": "https://open.spotify.com/playlist/",
+      "username": "404festival"
+    },
+    "whatsapp": {
+      "number": "+5491234567890",
+      "message": "Hola, me interesa saber más sobre 404. FESTIVAL"
+    }
+  },
+  "contact": {
+    "email": "contacto@404festival.com",
+    "phone": "+54 9 1234567890",
+    "support_hours": "Lunes a Viernes, 10:00 - 18:00 (ART)"
+  },
+  "seo": {
+    "title": "404. FESTIVAL - Shows en Vivo de Artistas Locales",
+    "description": "404. FESTIVAL presenta los mejores shows en vivo de artistas locales emergentes de RAP. Descubre la música underground que está transformando la escena.",
+    "keywords": "rap, festival, música en vivo, artistas emergentes, shows locales, hip-hop, underground",
+    "author": "404. FESTIVAL",
+    "lang": "es"
+  },
+  "analytics": {
+    "google_analytics_id": "G-XXXXX",
+    "enable_tracking": false
+  }
+}

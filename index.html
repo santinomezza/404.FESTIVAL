@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>404 Festival</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">404</div>
+
+<nav class="nav">
+
+<a href="#artistas">ARTISTAS</a>
+<a href="#ubicacion">UBICACIÓN</a>
+<a href="#contacto">CONTACTO</a>
+
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<video autoplay muted loop playsinline class="hero-video">
+<source src="/img/hero-vid.mp4" type="video/mp4">
+</video>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<h1>404 FESTIVAL</h1>
+
+<p class="hero-tag">
+
+RAP · TRAP · UNDERGROUND
+
+</p>
+
+<a href="#artistas" class="hero-btn">
+VER LINEUP
+</a>
+<div class="countdown">
+
+<div>
+<span id="days"></span>
+<p>DÍAS</p>
+</div>
+
+<div>
+<span id="hours"></span>
+<p>HS</p>
+</div>
+
+<div>
+<span id="minutes"></span>
+<p>MIN</p>
+</div>
+
+<div>
+<span id="seconds"></span>
+<p>SEG</p>
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+<section id="artistas" class="section">
+
+<h2>LINEUP</h2>
+
+<div class="artists-grid">
+
+<div class="artist">
+<img src="">
+<h3>MC ERROR</h3>
+</div>
+
+<div class="artist">
+<img src="">
+<h3>TRAP SYSTEM</h3>
+</div>
+
+<div class="artist">
+<img src="">
+<h3>CYBER FLOW</h3>
+</div>
+
+<div class="artist">
+<img src=" ">
+<h3>DARK BEATS</h3>
+</div>
+
+</div>
+
+</section>
+<section id="entradas" class="section ticket-section">
+
+<h2>ADQUIRÍ TU ENTRADA</h2>
+
+<form class="ticket-form" id="ticketForm">
+
+<input type="text" id="nombre" placeholder="Nombre" required>
+
+<input type="text" id="apellido" placeholder="Apellido" required>
+
+<select id="pago">
+
+<option value="Transferencia">Transferencia</option>
+<option value="Efectivo">Efectivo</option>
+
+</select>
+
+<button type="submit">
+
+COMPRAR ENTRADA
+
+</button>
+
+</form>
+
+<p class="ticket-info">
+
+Precio entrada: $5000 ARS  
+
+
+</p>
+
+</section>
+
+<section id="ubicacion" class="section">
+
+<h2>UBICACIÓN</h2>
+
+<div class="map-container">
+
+<div id="map"></div>
+
+<p class="map-address">
+Zurita 496 · Catamarca · Argentina
+</p>
+
+<a
+href="https://www.google.com/maps/dir/?api=1&destination=Zurita+496+Catamarca"
+target="_blank"
+class="hero-btn">
+
+CÓMO LLEGAR
+
+</a>
+
+</div>
+
+</section>
+
+<section id="nosotros" class="section about-section">
+
+<h2>NOSOTROS</h2>
+
+<div class="about-container">
+
+<div class="about-text">
+
+<p>
+<strong>404 FESTIVAL</strong> es una plataforma cultural dedicada a impulsar
+la escena urbana emergente en Catamarca. El proyecto busca crear un espacio
+donde artistas de rap, trap y música urbana puedan presentarse, conectar con
+su público y desarrollar nuevas propuestas musicales.
+</p>
+
+<p>
+Nuestro objetivo es fortalecer la cultura underground, promover el talento
+local y generar eventos que mezclen música, arte digital y experiencias
+audiovisuales dentro de una estética cyber y futurista.
+</p>
+
+<p>
+Más que un festival, <strong>404</strong> es una comunidad que busca abrir
+nuevos espacios para la expresión artística independiente y el crecimiento
+de la escena urbana.
+</p>
+
+</div>
+
+<div class="social-links">
+
+<a href="#" class="social tiktok">
+<i class="fab fa-tiktok"></i>
+</a>
+
+<a href="#" class="social instagram">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="#" class="social spotify">
+<i class="fab fa-spotify"></i>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>404 FESTIVAL © 2026</p>
+
+</footer>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
