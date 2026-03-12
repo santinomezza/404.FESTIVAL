@@ -1,0 +1,82 @@
+
+/* WEM Boost Footer Styles */
+.footer-wemboost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 8% 40px;
+    border-top: 1px solid #111;
+    margin-top: 100px;
+    background: linear-gradient(180deg, transparent, rgba(138,43,255,0.05));
+    text-align: center;
+    gap: 30px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-logo {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--neon-cyan);
+    letter-spacing: -2px;
+    opacity: 0.8;
+}
+
+.footer-copy {
+    color: #888;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+.footer-dev {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+}
+
+.wemboost-link {
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.05);
+}
+
+.wemboost-link:hover {
+    color: var(--neon-purple);
+    background: rgba(138,43,255,0.1);
+    box-shadow: 0 0 15px rgba(138,43,255,0.3);
+    transform: translateY(-2px);
+}
+
+@media(max-width: 480px) {
+    .footer-wemboost {
+        padding: 50px 5% 30px;
+    }
+    .footer-logo {
+        font-size: 2rem;
+    }
+    .footer-copy {
+        font-size: 0.8rem;
+    }
+    .footer-dev {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

@@ -1,97 +1,63 @@
-// ============================================
-// ESTILOS BASE
-// ============================================
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
+:root {
+    --neon-cyan: #00f7ff;
+    --neon-purple: #8a2bff;
+    --neon-pink: #ff2bd6;
+    --dark-bg: #050505;
 }
 
-:root {
-  --neon-cyan: #{$neon-cyan};
-  --neon-purple: #{$neon-purple};
-  --neon-pink: #{$neon-pink};
-  --dark-bg: #{$dark-bg};
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  background: var(--dark-bg);
-  color: $text-primary;
-  overflow-x: hidden;
+    background: var(--dark-bg);
+    color: #fff;
+    overflow-x: hidden;
 }
 
-// ============================================
-// TIPOGRAFÍA BASE
-// ============================================
-
 h1, h2, h3 {
-  font-weight: 900;
-  letter-spacing: -3px;
+    font-weight: 900;
+    letter-spacing: -3px;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 button {
-  cursor: pointer;
-  border: none;
+    cursor: pointer;
+    border: none;
 }
 
 input, select, textarea {
-  font-family: inherit;
+    font-family: inherit;
 }
 
-// ============================================
-// ANIMACIONES
-// ============================================
-
 @keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
 }
 
 @keyframes glow {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.7;
-  }
+    0%, 100% { opacity: 1; }
+    50% { opacity: .7; }
 }
 
 @keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-// ============================================
-// ESPACIADO GENERAL
-// ============================================
-
-section {
-  padding: $spacing-4xl 8%;
-  border-top: 1px solid $border-color;
-
-  h2 {
-    font-size: $font-size-3xl;
-    margin-bottom: $spacing-3xl;
-  }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

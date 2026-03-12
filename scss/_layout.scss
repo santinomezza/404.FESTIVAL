@@ -1,0 +1,231 @@
+section, .section {
+    padding: 140px 8%;
+    border-top: 1px solid #111;
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(0,0,0,0);
+    transition: background .3s;
+    z-index: 1000;
+
+    &.scrolled {
+        background: #000;
+        border-bottom: 1px solid #111;
+    }
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan);
+}
+
+.nav {
+    display: flex;
+
+    a {
+        margin-left: 40px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        position: relative;
+        transition: color .3s;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--neon-purple), var(--neon-cyan));
+            transition: width .3s;
+        }
+
+        &:hover {
+            color: var(--neon-cyan);
+            text-shadow: 0 0 10px var(--neon-cyan);
+
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 15px;
+    min-width: 60%;
+    min-height: 60%;
+    transform: translate(-50%, -25%);
+    object-fit: contain;
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 900px;
+
+    h1 {
+        font-size: 7rem;
+        font-weight: 900;
+        letter-spacing: -3px;
+    }
+}
+
+.hero-tag {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ccc;
+    letter-spacing: 4px;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 18px 40px;
+    background: linear-gradient(90deg, var(--neon-purple), var(--neon-cyan));
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 0 10px var(--neon-purple), 0 0 20px var(--neon-cyan);
+    transition: transform .3s, box-shadow .3s;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px var(--neon-cyan), 0 0 40px var(--neon-purple);
+    }
+}
+
+.countdown {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+    div {
+        text-align: center;
+    }
+
+    span {
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: var(--neon-cyan);
+        text-shadow: 0 0 10px var(--neon-cyan);
+    }
+
+    p {
+        font-size: .7rem;
+        letter-spacing: 2px;
+        color: #aaa;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid #111;
+    margin-top: 100px;
+}
+
+.footer-wemboost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 8% 40px;
+    border-top: 1px solid #111;
+    margin-top: 100px;
+    background: linear-gradient(180deg, transparent, rgba(138,43,255,0.05));
+    text-align: center;
+    gap: 30px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-logo {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--neon-cyan);
+    letter-spacing: -2px;
+    opacity: 0.8;
+}
+
+.footer-copy {
+    color: #888;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+.footer-dev {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+}
+
+.wemboost-link {
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.05);
+
+    &:hover {
+        color: var(--neon-purple);
+        background: rgba(138,43,255,0.1);
+        box-shadow: 0 0 15px rgba(138,43,255,0.3);
+        transform: translateY(-2px);
+    }
+}

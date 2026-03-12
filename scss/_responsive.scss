@@ -1,189 +1,53 @@
-// ============================================
-// RESPONSIVE DESIGN
-// ============================================
-
-@media (max-width: 900px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
-  .location-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-container {
-    flex-direction: column;
-    gap: $spacing-3xl;
-  }
-
-  .about-text {
-    max-width: 100%;
-  }
-
-  .hero h1 {
-    font-size: 3.5rem;
-  }
-
-  .nav a {
-    margin-left: $spacing-lg;
-    font-size: 0.9rem;
-  }
-
-  .countdown {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: $spacing-lg;
-    padding: 0 $spacing-md;
-  }
-
-  .countdown span {
-    font-size: $font-size-xl;
-  }
-
-    .countdown p{
-    font-size: $font-size-xs;
-  }
-
-  .artists-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: $spacing-lg;
-  }
+@media(max-width: 900px) {
+    .hero { grid-template-columns: 1fr; }
+    .location-grid { grid-template-columns: 1fr; }
+    .about-container { flex-direction: column; gap: 50px; }
+    .about-text { max-width: 100%; }
+    .hero h1 { font-size: 3.5rem; }
+    .nav a { margin-left: 20px; font-size: .9rem; }
+    .countdown { gap: 20px; }
+    .countdown span { font-size: 2rem; }
+    .artists-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
 }
 
-@media (max-width: 768px) {
-  .hero {
-    height: 80vh;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-tag {
-    font-size: 1rem;
-  }
-
-  .logo {
-    font-size: 1.5rem;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .header {
-    padding: 15px 5%;
-  }
-
-  .about-section {
-    padding: 80px 5% !important;
-  }
-
-  .about-container {
-    gap: $spacing-2xl;
-  }
-
-  .section {
-    padding: 80px 5%;
-
-    h2 {
-      font-size: 2rem;
-    }
-  }
-
-  .artists-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .countdown {
-    flex-direction: column;
-    gap: $spacing-md;
-  }
-
-  #map {
-    max-width: 100%;
-    height: 300px;
-  }
-
-  .location-grid {
-    gap: $spacing-lg;
-  }
+@media(max-width: 768px) {
+    .hero { height: 80vh; }
+    .hero h1 { font-size: 2.5rem; }
+    .hero-tag { font-size: 1rem; }
+    .logo { font-size: 1.5rem; }
+    .nav { display: none; }
+    .header { padding: 15px 5%; }
+    .about-section { padding: 80px 5% !important; }
+    .about-container { gap: 40px; }
+    .section { padding: 80px 5%; }
+    .section h2 { font-size: 2rem; }
+    .artists-grid { grid-template-columns: repeat(2, 1fr); }
+    .countdown { flex-direction: column; gap: 15px; }
+    #map { max-width: 100%; height: 300px; }
+    .location-grid { gap: 20px; }
 }
 
-@media (max-width: 480px) {
-  * {
-    font-family: Helvetica, Arial, sans-serif;
-  }
+@media(max-width: 480px) {
+    * { font-family: Helvetica, Arial, sans-serif; }
+    .hero h1 { font-size: 2rem; }
+    .hero-tag { font-size: .9rem; letter-spacing: 2px; }
+    .logo { font-size: 1.2rem; }
+    .hero-btn { padding: 12px 25px; font-size: .9rem; }
+    .countdown { margin-top: 40px; }
+    .countdown span { font-size: 2rem; }
+    .section { padding: 50px 5%; }
+    .section h2 { font-size: 1.5rem; margin-bottom: 40px; }
+    .artists-grid { grid-template-columns: 1fr; gap: 15px; }
+    .artist h3 { font-size: 1.2rem; bottom: 15px; left: 15px; }
+    .ticket-form { max-width: 100%; }
+    .about-container { gap: 20px; }
+    .about-text { font-size: .9rem; }
+    #map { height: 200px; }
+    .social { width: 50px; height: 50px; font-size: 1.5rem; }
+    .map-address { font-size: .85rem; }
 
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero-tag {
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-  }
-
-  .logo {
-    font-size: 1.2rem;
-  }
-
-  .hero-btn {
-    padding: 12px 25px;
-    font-size: 0.9rem;
-  }
-
-  .countdown {
-    margin-top: $spacing-2xl;
-  }
-
-  .countdown span {
-    font-size: $font-size-2xl;
-  }
-
-  .section {
-    padding: 50px 5%;
-
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: $spacing-2xl;
-    }
-  }
-
-  .artists-grid {
-    grid-template-columns: 1fr;
-    gap: $spacing-md;
-  }
-
-  .artist h3 {
-    font-size: 1.2rem;
-    bottom: $spacing-md;
-    left: $spacing-md;
-  }
-
-  .ticket-form {
-    max-width: 100%;
-  }
-
-  .about-container {
-    gap: $spacing-lg;
-  }
-
-  .about-text {
-    font-size: 0.9rem;
-  }
-
-  #map {
-    height: 200px;
-  }
-
-  .social {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-  }
-
-  .map-address {
-    font-size: 0.85rem;
-  }
+    .footer-wemboost { padding: 50px 5% 30px; }
+    .footer-logo { font-size: 2rem; }
+    .footer-copy { font-size: 0.8rem; }
+    .footer-dev { flex-direction: column; gap: 5px; }
 }
